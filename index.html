@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>응원법</title>
+    <style>
+        @font-face {
+        font-family: 'KCCMurukmuruk';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCMurukmuruk.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        @keyframes ani{
+            0%{transform:rotate(0deg)}
+            100%{transform: rotate(360deg);}
+        }
+
+        *{margin: 0; padding: 0;}
+
+        body{font-size: 10px;}
+        header{width: 100%; height: 150px; background-color: #f7cac9;}
+        section{width: 100%; padding: 0 8%; box-sizing: border-box;}
+        article{width: 100%; background-color: aliceblue; box-sizing: border-box; padding: 100px 0;}
+        ul{width: 100%; list-style: none; height: 260px; box-sizing: border-box; overflow: hidden;}
+        li{float: left; width: 15%; margin-right: 2%; background-color: #f7cac9; box-sizing: border-box; height: 250px; position: relative; overflow: hidden;}
+        .six{margin: 0;}
+        .cd{width: 96%;  margin: 0 2%; margin-top: 5px; box-sizing: border-box;}
+        a{display: inline-block;}
+        .text{width: 100%; height: 160px; box-sizing: border-box; background: url(img/text_bg.png) no-repeat; background-size: 100% 100%; color: #fff; position: absolute; top: 100px;}
+        .album{height: 100px; box-sizing: border-box; padding-top: 25px; font-size: 1.8em; text-align: center; font-family: 'KCCMurukmuruk';  text-transform: uppercase;}
+        .title{width: 100%; height: 50px; box-sizing: border-box; padding-top: 10px; text-align: center; font-family: 'KCCMurukmuruk'; font-size: 1.8em; position: absolute;}
+        .one:hover .text{transform: translateY(90px); transition: all 1.5s;}
+        .one:hover .album{transform: translateY(90px); opacity: 0; transition: all 1s;}
+        .one:hover .title{transform: translateY(-90px); transition: all 1.5s;}
+        .one:hover .cd{animation: ani 2s linear infinite;}
+
+        .two:hover .text{transform: translateY(90px); transition: all 1.5s;}
+        .two:hover .album{transform: translateY(90px); opacity: 0; transition: all 1s;}
+        .two:hover .title{transform: translateY(-90px); transition: all 1.5s;}
+
+
+
+        /* pc중간 폰트크기변경 */
+        @media(min-width:1200px) and (max-width:1399px){
+            ul{height: 220px;}
+            .text{top: 80px;}
+            .album,.title{font-size: 1.6em;}
+            .one:hover .text{transform: translateY(70px);}
+            .one:hover .title{transform: translateY(-80px);}
+
+            .two:hover .text{transform: translateY(70px);}
+            .two:hover .title{transform: translateY(-80px);}
+
+        }
+        /* 태블릿 */
+        @media(min-width:960px) and (max-width:1199px){
+            ul{height: 200px;}
+            .text{top: 80px; height: 120px;}
+            .album{height: 60px; padding-top: 15px;}
+            .title{height: 30px; top: 80px;}
+            .album,.title{font-size: 1.5em;}
+            .one:hover .text{transform: translateY(50px);}
+            .one:hover .title{transform: translateY(-60px);}
+
+            .two:hover .text{transform: translateY(50px);}
+            .two:hover .title{transform: translateY(-60px);}
+        }
+        @media(min-width:600px) and (max-width:959px){
+            ul{height: 160px;}
+            .text{top: 80px; height: 120px;}
+            .album{height: 60px; padding-top: 15px;}
+            .title{height: 30px; top: 80px;}
+            .album,.title{font-size: 1.2em;}
+            .one:hover .text{transform: none;}
+            .one:hover .title{transform: translateY(-60px);}
+
+            .two:hover .text{transform: none;}
+            .two:hover .title{transform: translateY(-60px);}
+        }
+
+        /* 모바일 */
+        @media(min-width:320px) and (max-width:599.9px){
+            ul{height: 400px;}
+            li{width: 32%; overflow: hidden; height: 180px; margin-bottom: 20px;}
+            .three{margin: 0;}
+            .text{top: 80px; height: 100px;}
+            .album,.title{font-size: 1.2em;}
+            .album{height: 60px; padding-top: 15px;}
+
+            .one:hover .text{transform: none; transition: none;}
+            .one:hover .album{transform: none; opacity: 100; transition: none;}
+            .one:hover .title{transform: none; transition: none;}
+            .one:hover .cd{animation: none;}
+
+            .two:hover .text{transform: none; transition: none;}
+            .two:hover .album{transform: none; opacity: 100; transition: none;}
+            .two:hover .title{transform: none; transition: none;}
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <section>
+        <article>
+            <ul>
+                <li class="one">
+                    <a href="index.html"><img src="img/17carat cd1.png" alt="17carat" class="cd"></a>
+                    <div class="text">
+                        <p class="album">
+                            seventeen<br>
+                            미니 1집<br>
+                            17 carat
+                        </p>
+                        <p class="title">아낀다</p>
+                    </div>
+                </li>
+                <li class="two">
+                    <a href="index.html"><img src="img/17carat cd1.png" alt="17carat" class="cd"></a>
+                    <div class="text">
+                        <p class="album">
+                            seventeen<br>
+                            미니 1집<br>
+                            17 carat
+                        </p>
+                        <p class="title">Shining Diamond</p>
+                    </div>
+                </li>
+                <li class="three"></li>
+                <li class="four"></li>
+                <li class="five"></li>
+                <li class="six"></li>
+            </ul>
+        </article>
+    </section>
+    
+</body>
+</html>
